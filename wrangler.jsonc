@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "friendly-map-tokyo",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-07-25",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "friendly-map-tokyo-db",
+      "database_id": "b5f15cae-3efb-48bb-aac7-a4e4475b1911",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

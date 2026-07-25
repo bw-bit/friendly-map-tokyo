@@ -7,5 +7,5 @@ playwright-report/
 test-results/
 coverage/
 work/
+outputs/
 .DS_Store
-
